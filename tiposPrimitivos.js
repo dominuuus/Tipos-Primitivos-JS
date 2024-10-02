@@ -37,7 +37,7 @@ const aluno2 = 6
 const aluno3 = 9
 const media = (aluno1 + aluno2 + aluno3) / 3
 console.log("As notas dos alunos foram: "+aluno1+" | "+aluno2+" | "+aluno3)
-console.log("O resultado da média das três notas é: "+(media))
+console.log("O resultado da média das três notas é: "+media)
 
 // Programa de desconto
 const preco_real = 5400
@@ -45,3 +45,35 @@ const perc_desconto = 10
 const valor_desconto = preco_real * (perc_desconto / 100)
 const valor_final = preco_real - valor_desconto
 console.log("O preço médio do iPhone 15 é de R$ "+preco_real+" nas lojas digitais. Para pagamento à vista, é possível aplicar um desconto de "+perc_desconto+"%. Sendo assim, o consumidor teria um desconto de R$ "+valor_desconto+". O valor total a pagar ficaria em R$ "+valor_final+".")
+
+// Imposto de Renda
+const salario = 5400
+const aliquota = 9
+const deducao = salario * (aliquota / 100)
+console.log("Salário Bruto: R$ "+salario)
+console.log("Alíquota: "+aliquota+"% *")
+console.log("Dedução: R$ "+deducao)
+console.log("*Cálculo de alíquota realizado a partir do site da Receita Federal: https://www27.receita.fazenda.gov.br/simulador-irpf/")
+
+// Conversor de moeda
+const valor = 1200
+const cambio = 5.45
+const conversao_cambio = Math.round(valor / cambio)
+console.log("Valor em R$ "+valor)
+console.log("Câmbio: R$ "+cambio)
+console.log("Valor após conversão em dólar: US$ "+conversao_cambio)
+
+// Conversor de temperatura
+const celsius = 40
+const conversao_temperatura = (celsius * 9/5) + 32
+console.log("Temperatura em Celsius: "+celsius+"º")
+console.log("Temperatura correspondente em Fahrenheit: "+conversao_temperatura+"º")
+
+// Calculadora IMC
+const peso = 60
+const alturaimc = 1.77
+const imc = (peso / (alturaimc * alturaimc))
+console.log("Peso: "+peso+" kg")
+console.log("Altura: "+alturaimc+" m")
+console.log("IMC: "+imc.toFixed(2))
+
